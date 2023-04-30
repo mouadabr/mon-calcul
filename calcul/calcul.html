@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>.calculator {
+	width: 300px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	padding: 10px;
+}
+
+.display {
+	background-color: #f0f0f0;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.display input {
+	width: 100%;
+	font-size: 1.5em;
+	text-align: right;
+	border: none;
+	background-color: transparent;
+}
+
+.buttons button {
+	width: 50px;
+	height: 50px;
+	font-size: 1.2em;
+	margin: 2px;
+	background-color: #e0e0e0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.buttons button:hover {
+	background-color: #d0d0d0;
+}
+</style>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" disabled>
+		</div>
+		<div class="buttons">
+			<button onclick="clearDisplay()">C</button>
+			
+			<button onclick="addInput('/')">÷</button>
+			<button onclick="addInput('*')">x</button>
+			<button onclick="addInput('7')">7</button>
+			<button onclick="addInput('8')">8</button>
+			<button onclick="addInput('9')">9</button>
+			<button onclick="addInput('-')">-</button>
+			<button onclick="addInput('4')">4</button>
+			<button onclick="addInput('5')">5</button>
+			<button onclick="addInput('6')">6</button>
+			<button onclick="addInput('+')">+</button>
+			<button onclick="addInput('1')">1</button>
+			<button onclick="addInput('2')">2</button>
+			<button onclick="addInput('3')">3</button>
+			<button onclick="calculate()">=</button>
+			<button onclick="addInput('0')">0</button>
+			<button onclick="addInput('.')">.</button>
+		</div>
+	</div>
+	<script src="calcul.js"></script>
+</body>
+</html>
